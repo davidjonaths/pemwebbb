@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Dave</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #001f3f, #003366, #001a33); /* navy / biru gelap */
+      color: #e5e5e5;
+      text-align: center;
+    }
+
+    /* === NAVBAR === */
+    nav {
+      background: #001a33;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      color: #e5e5e5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8; /* biru neon */
+    }
+
+    /* === KONTEN === */
+    .header-profil {
+      padding: 100px 40px 40px;
+    }
+
+    .profil-animasi {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #38bdf8;
+      animation: goyang 3s infinite alternate;
+    }
+
+    @keyframes goyang {
+      from { transform: rotate(-5deg); }
+      to { transform: rotate(5deg); }
+    }
+
+    .section-card {
+      background: rgba(0, 31, 63, 0.85); /* transparan navy */
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-top: 10px;
+    }
+
+    #jadwal table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #ddd;
+    }
+
+    #jadwal th, #jadwal td {
+      padding: 10px;
+      border: 1px solid #38bdf8;
+    }
+
+    .hobi-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .foto-hobi {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid #38bdf8;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .foto-hobi:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #38bdf8;
+    }
+
+    .motto {
+      margin-top: 15px;
+      font-style: italic;
+      color: #38bdf8;
+    }
+
+    #clock {
+      font-size: 32px;
+      font-weight: bold;
+      color: #38bdf8;
+      margin-top: 15px;
+      text-shadow: 0 0 15px #38bdf8;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #001a33;
+      color: #aaa;
+    }
+
+    /* ===== CONTACT ===== */
+    #kontak h2 {
+      font-size: 26px;
+      font-weight: bold;
+      color: #38bdf8;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    #kontak ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #kontak li {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+
+    #kontak i {
+      margin-right: 10px;
+      color: #38bdf8;
+    }
+
+    #kontak a {
+      color: #e5e5e5;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    #kontak a:hover {
+      color: #38bdf8;
+      text-decoration: underline;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <nav>
+    <ul>
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#pendidikan">Pendidikan</a></li>
+      <li><a href="#hobi">Hobi</a></li>
+      <li><a href="#jadwal">Jadwal</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="#jam-digital">Jam Digital</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="header-profil">
+    <figure>
+      <img src="./img/profil.jpg" alt="Foto Profil Dave" class="profil-animasi" loading="lazy">
+      <figcaption><strong>David Jonathan Simanjuntak</strong></figcaption>
+    </figure>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- About Me -->
+    <article id="about" class="section-card">
+      <h2>Tentang Saya</h2>
+      <p>Halo! Aku <strong>David Jonathan Simanjuntak</strong>, biasa dipanggil <b>Dave</b>. 
+      Aku berasal dari <b>Medan</b> dan sekarang sedang menempuh pendidikan di <b>Universitas Sumatera Utara</b> 
+      jurusan <b>Ilmu Komputer</b>.</p>
+    </article>
+
+    <!-- Pendidikan -->
+    <article id="pendidikan" class="section-card">
+      <h2>Riwayat Pendidikan</h2>
+      <ul style="list-style:none; padding:0; text-align:left; max-width:500px; margin:auto;">
+        <li>📘 SD : SD Santo Thomas 2 Medan</li>
+        <li>📗 SMP : SMPN 18 Medan</li>
+        <li>📕 SMA : SMK Telkom Sandhy Putra Medan</li>
+        <li>🎓 Universitas : Universitas Sumatera Utara - S1 Ilmu Komputer</li>
+      </ul>
+    </article>
+
+    <!-- Hobi -->
+    <article id="hobi" class="section-card">
+      <h2>Hobi</h2>
+      <p>Beberapa hobiku adalah <b>fotografi</b>, <b>running</b>, <b>design</b>, dan <b>bernyanyi</b>.</p>
+      
+      <div class="hobi-gallery">
+        <img src="./img/foto1.jpg" alt="Fotografi" class="foto-hobi" loading="lazy">
+        <img src="./img/foto2.jpg" alt="Running" class="foto-hobi" loading="lazy">
+        <img src="./img/foto3.jpg" alt="Design" class="foto-hobi" loading="lazy">
+        <img src="./img/foto4.jpg" alt="Bernyanyi" class="foto-hobi" loading="lazy">
+      </div>
+
+      <blockquote class="motto">“Ora et Labora”</blockquote>
+    </article>
+
+    <!-- Jadwal Kuliah -->
+    <article id="jadwal" class="section-card">
+      <h2>Jadwal Kuliah</h2>
+      <table>
+        <caption>Daftar Mata Kuliah Mingguan</caption>
+        <thead>
+          <tr><th>Hari</th><th>Mata Kuliah</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Senin</td><td>LAB Pemweb (10.30-12.10), LAB Basdat (13.50-15.30)</td></tr>
+          <tr><td>Selasa</td><td>LAB Struktur Data (10.30-12.10), MKWU (13.00-15.30)</td></tr>
+          <tr><td>Rabu</td><td>Pemweb (08.00-10.30), Basdat (14.40-17.10)</td></tr>
+          <tr><td>Kamis</td><td>Etika Profesi (08.00-10.30), KCB (13.00-15.30)</td></tr>
+          <tr><td>Jumat</td><td>WIRDI (08.00-09.40), Struktur Data (13.50-16.20)</td></tr>
+        </tbody>
+      </table>
+    </article>
+
+    <!-- Kontak -->
+    <aside id="kontak" class="section-card">
+      <h2>Hubungi Saya</h2>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:davidjonaths@gmail.com">davidjonaths@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i> 
+          <a href="tel:089613610568">0896-1361-0568</a></li>
+        <li><i class="fa-brands fa-instagram"></i> 
+          <a href="https://www.instagram.com/davidjonathh" target="_blank">@davidjonathh</a></li>
+      </ul>
+    </aside>
+
+    <!-- Jam Digital -->
+    <section id="jam-digital" class="section-card">
+      <h2>Jam Sekarang</h2>
+      <div id="clock" aria-label="Jam Digital"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 David Jonathan Simanjuntak | Ilmu Komputer USU</p>
+  </footer>
+
+  <!-- Script Jam Digital -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      let h = String(now.getHours()).padStart(2, '0');
+      let m = String(now.getMinutes()).padStart(2, '0');
+      let s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById("clock").textContent = `${h}:${m}:${s}`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>

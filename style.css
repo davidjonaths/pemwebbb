@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  color: #e2e8f0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Judul */
+h2 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Profil */
+.header-profil {
+  padding: 40px;
+}
+
+.profil-animasi {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #38bdf8;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  animation: goyang 4s infinite alternate ease-in-out;
+}
+
+@keyframes goyang {
+  from { transform: rotate(-6deg) scale(1); }
+  to   { transform: rotate(6deg) scale(1.05); }
+}
+
+/* Section Card */
+.section-card {
+  background: rgba(30, 41, 59, 0.95);
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 850px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+/* Hobi */
+.hobi-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.foto-hobi {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-hobi:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(56,189,248,0.6);
+}
+
+/* Motto */
+.motto, blockquote {
+  margin-top: 18px;
+  font-style: italic;
+  color: #94a3b8;
+  border-left: 4px solid #38bdf8;
+  padding-left: 15px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Jadwal */
+#jadwal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#jadwal caption {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+#jadwal th, #jadwal td {
+  padding: 12px;
+  border: 1px solid #334155;
+  text-align: center;
+}
+
+#jadwal th {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
+/* Kontak */
+#kontak ul {
+  list-style: none;
+  padding: 0;
+}
+
+#kontak li {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+#kontak i {
+  margin-right: 10px;
+  color: #38bdf8;
+}
+
+#kontak a {
+  color: #e2e8f0;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#kontak a:hover {
+  color: #38bdf8;
+  transform: translateX(3px);
+}
+
+/* Jam Digital */
+#clock {
+  font-size: 32px;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #0f172a;
+  font-size: 14px;
+  color: #94a3b8;
+  border-top: 2px solid #38bdf8;
+}
